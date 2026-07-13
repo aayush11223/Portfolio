@@ -4,16 +4,24 @@ import connectDB from "./config/db.js";
 import errorHandler from './middleware/errorHandler.js';
 import projectRoutes from './routes/projectRoutes.js';
 import contactRoutes from './routes/contactRoutes.js';
+import path from "path";
+
+import cors from 'cors';
+
 
 const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
+app.use(cors());
+
 
 app.use(projectRoutes);
 app.use(contactRoutes);
 
 app.use(errorHandler);
+
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 const startServer = async () => {
 
