@@ -11,7 +11,7 @@ const Hero = () => {
                 Full-Stack MERN Developer
             </p>
 
-            <p className="max-w-2xl text-xl leading-8 text-gray-700">
+            <p className="max-w-2xl text-xl leading-8 text-gray-900">
                 I build responsive and scalable web applications using MongoDB,
                 Express, React, and Node.js.
             </p>

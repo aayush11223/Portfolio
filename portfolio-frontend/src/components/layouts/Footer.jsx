@@ -22,7 +22,7 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer className="w-full border-t bg-white py-6 shadow-sm">
+        <footer className="w-full border-t  py-6 shadow-sm">
             <div className="container mx-auto flex flex-col items-center justify-center space-y-3">
                 <p className="text-lg font-semibold">Aayush Basnet</p>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                     href="https://aayushbasnet05.com.np"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 transition hover:text-blue-600"
+                    className="text-gray-900 transition hover:text-blue-600"
                 >
                     aayushbasnet05.com.np
                 </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                     ))}
                 </div>
 
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-900">
                     © {new Date().getFullYear()} Aayush Basnet. All rights reserved.
                 </p>
             </div>

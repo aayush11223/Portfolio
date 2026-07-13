@@ -1,4 +1,7 @@
-import Hero from "../components/sections/Hero.jsx"
+import Hero from "@/components/sections/Hero.jsx";
+import About from "@/components/sections/About.jsx";
+import Skills from "@/components/sections/Skills.jsx"
+
 const HomePage = () => {
     return (
         <>
@@ -7,11 +10,11 @@ const HomePage = () => {
             </section>
 
             <section id="about">
-                <h1></h1>
+                <About />
             </section>
 
             <section id="skills">
-                <h1></h1>
+                <Skills />
             </section>
 
             <section id="projects">
