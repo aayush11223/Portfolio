@@ -20,16 +20,18 @@ const Skills = () => {
                     Skills</p>
 
                 <div className="flex flex-wrap justify-center gap-4">
-                    {skills.map((skill, index) => (
-                        <div key={index} >
+                    {
+                        skills.map((skill, index) => (
+                            <div key={index} >
 
-                            <Badge
-                                className="rounded-full bg-blue-600 px-5 py-2.5 text-lg text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700 "
-                            >
-                                {skill}
-                            </Badge>
-                        </div>
-                    ))}
+                                <Badge
+                                    className="rounded-full bg-blue-600 px-5 py-2.5 text-lg text-white transition-all duration-300 hover:scale-105 hover:bg-blue-700 "
+                                >
+                                    {skill}
+                                </Badge>
+                            </div>
+                        ))
+                    }
                 </div>
 
             </div>

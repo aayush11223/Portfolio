@@ -47,7 +47,7 @@ const createProject = async (req, res, next) => {
             throw new Error('Title, description, and techStack are required');
         }
 
-        const project = await Project.create({
+        const projects = await Project.create({
             title,
             description,
             techStack,
@@ -57,7 +57,7 @@ const createProject = async (req, res, next) => {
             featured,
         });
 
-        res.status(201).json(project);
+        res.status(201).json(projects);
 
     } catch (error) {
         next(error);
