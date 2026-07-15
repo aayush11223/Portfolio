@@ -16,9 +16,11 @@ const Hero = () => {
                 Express, React, and Node.js.
             </p>
 
-            <Button className="cursor-pointer rounded-full bg-blue-600 px-8 py-7 text-lg transition-all duration-300 hover:scale-105 hover:bg-blue-700">
-                Download Resume
-            </Button>
+            <a href="/Resume.pdf" download>
+                <Button className="cursor-pointer rounded-full bg-blue-600 px-8 py-7 text-lg transition-all duration-300 hover:scale-105 hover:bg-blue-700">
+                    Download Resume
+                </Button>
+            </a>
         </div>
     );
 };
