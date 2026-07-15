@@ -1,7 +1,8 @@
 import Hero from "../components/sections/Hero.jsx";
 import About from "../components/sections/About.jsx";
 import Skills from "../components/sections/Skills.jsx";
-import Projects from "../components/sections/Projects.jsx"
+import Projects from "../components/sections/Projects.jsx";
+import Contact from "../components/sections/Contact.jsx";
 
 const HomePage = () => {
     return (
@@ -23,7 +24,7 @@ const HomePage = () => {
             </section >
 
             <section id="contact">
-                <h1></h1>
+                <Contact />
             </section>
         </>
     );

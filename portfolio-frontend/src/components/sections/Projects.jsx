@@ -12,7 +12,6 @@ const Projects = () => {
         const getProjects = async () => {
             try {
                 const response = await api.get("/projects");
-                console.log(response.data);
                 setProjects(response.data);
             } catch (err) {
                 console.error(err);
@@ -45,8 +44,7 @@ const Projects = () => {
                         key={project._id}
                         className="w-96 p-6"
                     >
-                        <img className="mt-5 h-52 w-full rounded-b-xl object-cover border border-gray-200 shadow-sm"
-
+                        <img className="mt-5 h-40 w-full rounded-b-xl border border-gray-200 shadow-sm"
                             src={`${import.meta.env.VITE_API_URL}${project.image}`}
                             alt={project.title}
                         />
