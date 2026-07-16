@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(
     cors({
-        origin: "https://aayushbasnet05.com.np/",
+        origin: "https://aayushbasnet05.com.np",
 
     })
 );
